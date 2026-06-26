@@ -6,7 +6,7 @@ class Node:
 class SinglyLinkedList:
     def __init__(self):
         self.head = None  # The list starts completely empty
-
+        
     # --- APPEND OPERATION ---
     def append(self, data):
         new_node = Node(data)
@@ -23,6 +23,11 @@ class SinglyLinkedList:
             
         # Link the old tail node to our new node
         current.next = new_node
+    
+    
+    
+
+
 
     # --- TRAVERSE OPERATION ---
     def traverse(self):
@@ -40,14 +45,4 @@ ll = SinglyLinkedList()
 ll.append(10)
 ll.append(20)
 ll.append(30)
-
 ll.traverse()  # Output: 10 -> 20 -> 30 -> NULL
-
-
-
-
-
-
-
-
-
