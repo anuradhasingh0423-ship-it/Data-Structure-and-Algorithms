@@ -189,6 +189,7 @@ class LinkedList:
 # ==========================================
 if __name__ == "__main__":
     ll = LinkedList()
+    
     ll.add_first(2)
     ll.add_first(1)
     ll.add_last(2)
