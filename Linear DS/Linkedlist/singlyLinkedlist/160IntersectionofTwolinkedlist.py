@@ -47,8 +47,10 @@ if __name__ == "__main__":
     # Step E: Verify and print output
     print("-" * 40)
     if intersection_node:
-        print(f"✅ Success! Intersected at node with value: '{intersection_node.val}'")
+        print(f"Success! Intersected at node with value: '{intersection_node.val}'")
         print(f"Memory Address of intersection: {hex(id(intersection_node))}")
     else:
-        print("❌ No intersection found.")
+        print(" No intersection found.")
     print("-" * 40)
+
+    
