@@ -4,19 +4,19 @@ class Solution(object):
         for i in range(n):
             for j in range(i + 1, n):
                 matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
-        for row in matrix:
-            row.reverse()
+        for i in range(n):
+            matrix[i].reverse()
 
 if __name__ == "__main__":
     sol = Solution()
+    mat = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
     
-    m1 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-    print("Original 1:")
-    for row in m1:
+    print("Original Matrix:")
+    for row in mat:
         print(row)
         
-    sol.rotate(m1)
+    sol.rotate(mat)
     
-    print("\nRotated 90° Clockwise 1:")
-    for row in m1:
+    print("\nRotated 90 Deg Clockwise:")
+    for row in mat:
         print(row)
